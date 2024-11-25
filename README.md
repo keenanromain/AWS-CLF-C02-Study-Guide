@@ -1,2 +1,2 @@
-# -AWS-CLF-C02-Study-Guide
+# AWS-CLF-C02-Study-Guide
 WIP
