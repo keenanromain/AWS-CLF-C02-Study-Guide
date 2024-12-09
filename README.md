@@ -32,3 +32,15 @@ Users can access AWS via the AWS Management Console (password protected and opti
 IAM Roles allow us to assign permissions to AWS services. For example, we may have a virtual server in EC2 retrieve data from an RDS database. The EC2 instance would need permissions via an IAM Role in order to query the database.
 
 EC2 allows us to rent virtual machines. We can store data on virtual drives (Elastic Block Store) that attach to EC2. You can choose your instance to be Linux, Mac Os, or Windows.
+
+EC2 Instance Types:
+https://aws.amazon.com/ec2/instance-types/
+
+From an exam perspective, the following few instance types are most likely to feature in the exam:
+- General Purpose instances are great for a diversity of workloads such as webservers or code repositories. They balance compute, memory, and networking very well.
+- Compute Optimized instances are great for compute-intensive tasks that require high performance processing such as batch processing workloads, media transcoding, dedicated gaming servers, etc.
+- Memory Optimized instances are great for workloads that process large data sets in memory such as high performance databases, distributed web scale caches, etc.
+- Storage Optimized instances are great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage. Use cases include databases, online transaction processing (OLTP) systems, data warehouse systems, distributed file systems, etc.
+
+Security Groups control how traffic is allowed into and out of our EC2 instances. Security groups only contain *allow* rules.
+
