@@ -63,3 +63,13 @@ An EBS Snapshot allow us to make a backup of our EBS volume at a point of time. 
 AMI (Amazon Machine Image) are a customization of an EC2 instance. By customizing our base image in this way, we can have a faster bootup and configuration time because the required specific software would be pre-packaged. AMIs are built for a specific region but can also be copied to different regions. You can launch EC2 instances from a AWS public AMI (Amazon provided), your own AMI (that you make and maintain yourself), and an AWS marketplace AMI (third-party made & maintained, possibly for a profit).
 
 EC2 Image Builder is used to automate the creation of VMs or container images. It streamlines the creation, validation, and testing of EC2 AMIs. It can be run on a schedule of your liking. The service itself is free, you only pay for the underlying resources created and used.
+
+EC2 Instance Stores is used for when you need a high-performance hardware disk. EC2 volumes serve a similar purpose but because they are "network USB sticks" their performance is limited as your instance is storing data across the network in a different machine. EC2 Instance Store on the other hand is a local store on the hardware of the EC2 instance itself. This provides very high throughput and I/O. The caveat is that if the EC2 instance is stopped or terminated, so is the machine's EC2 Instance Store. The same is true for hardware failures on the AWS side. Backups and replication are then your own responsibility if you want data to persist. EC2 Instance Store is good for a local buffer, cache, scratch data, or temporary content.   
+
+EFS (Elastic File System) is an NFS (Network File System) that can be mounted across hundreds of EC2 instances at a time. Think of it as a shared file system. It only works with Linux EC2 instances and works across multiple Availability Zones. While more expensive than EBS volumes, you pay per use and the service is highly available, scaleable, and fault tolerant. 
+
+EFS Infrequent Access (EFS-IA) is cost-optimized for files that aren't accessed everyday. It can be up to 92% cheaper than EFS Standard.
+
+Amazon FSx is a fully managed share file system alterantive with offerings for Lustre, Microsoft's Windows File Server, and NetApp ONTAP
+
+<img width="684" alt="Screen Shot 2024-12-09 at 5 40 59 PM" src="https://github.com/user-attachments/assets/74941241-402c-4784-b777-09977edcb581">
