@@ -72,4 +72,5 @@ EFS Infrequent Access (EFS-IA) is cost-optimized for files that aren't accessed 
 
 Amazon FSx is a fully managed share file system alterantive with offerings for Lustre, Microsoft's Windows File Server, and NetApp ONTAP
 
-<img width="684" alt="Screen Shot 2024-12-09 at 5 40 59 PM" src="https://github.com/user-attachments/assets/74941241-402c-4784-b777-09977edcb581">
+
+<img width="657" alt="Screen Shot 2024-12-09 at 5 41 42 PM" src="https://github.com/user-attachments/assets/b9b64074-dab5-4305-b8ed-3b3d5740921e">
