@@ -45,3 +45,11 @@ From an exam perspective, the following few instance types are most likely to fe
 Security Groups control how traffic is allowed into and out of our EC2 instances. Security groups only contain *allow* rules and can be thought of as a firewall on EC2 instances. By default, all inbound traffic is blocked and all outbound traffic is authorized.
 
 <img width="682" alt="Screen Shot 2024-12-09 at 2 50 59 PM" src="https://github.com/user-attachments/assets/cd9566cf-450b-4191-991d-96acd82c3dc3">
+
+EC2 Instances Purchasing Options:
+- On-Demand Instances: for short workloads, predicable pricing, pay by the second.
+- Reserved Instances: 1 & 3 year contracts for long workloads. You can also have long-term instances with a flexible instance type with Convertible Reserved Instances.
+- Savings Plan Instances: also for 1 & 3 year terms, however the commitment is to an amount used in dollars rather than the full timeframe.
+- Spot Instances: for cheap & short workloads, less reliable. They are based on a bidding system for unused capacity within AWS EC2 and at any time the highest bidder wins capacity.
+- Dedicated Instances: no other AWS customer can share your hardware.
+- Capacity Reservations: reserve capacity in a specific Availability Zone for any duration.
