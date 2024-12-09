@@ -42,5 +42,5 @@ From an exam perspective, the following few instance types are most likely to fe
 - Memory Optimized instances are great for workloads that process large data sets in memory such as high performance databases, distributed web scale caches, etc.
 - Storage Optimized instances are great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage. Use cases include databases, online transaction processing (OLTP) systems, data warehouse systems, distributed file systems, etc.
 
-Security Groups control how traffic is allowed into and out of our EC2 instances. Security groups only contain *allow* rules.
+Security Groups control how traffic is allowed into and out of our EC2 instances. Security groups only contain *allow* rules and can be thought of as a firewall on EC2 instances. By default, all inbound traffic is blocked and all outbound traffic is authorized.
 
