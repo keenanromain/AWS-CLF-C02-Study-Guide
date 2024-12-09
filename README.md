@@ -53,3 +53,5 @@ EC2 Instances Purchasing Options:
 - Spot Instances: for cheap & short workloads, less reliable. They are based on a bidding system for unused capacity within AWS EC2 and at any time the highest bidder wins capacity.
 - Dedicated Instances: no other AWS customer can share your hardware.
 - Capacity Reservations: reserve capacity in a specific Availability Zone for any duration.
+
+<img width="653" alt="Screen Shot 2024-12-09 at 3 34 00 PM" src="https://github.com/user-attachments/assets/c583a0a7-10fb-41fd-a41e-e71507dea5ea"> 
