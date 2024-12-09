@@ -55,3 +55,11 @@ EC2 Instances Purchasing Options:
 - Capacity Reservations: reserve capacity in a specific Availability Zone for any duration.
 
 <img width="653" alt="Screen Shot 2024-12-09 at 3 34 00 PM" src="https://github.com/user-attachments/assets/c583a0a7-10fb-41fd-a41e-e71507dea5ea"> 
+
+An EBS (Elastic Block Store) is a network drive you can attach to your instances while they run. It allows your instances to persist data even after the instance is terminated. An EBS volume is bound to a particular Availability Zone. You can think of EBS Volumes as "network USB sticks". Because of this, they can be detached from one EC2 instance and reattached to another one fairly quickly.
+
+An EBS Snapshot allow us to make a backup of our EBS volume at a point of time. This lets us make a copy of our EBS Volume that can then be used on a different instance in a different Availability Zone because without a copy, EBS Volumes are bound to specific Availability Zones. 
+
+AMI (Amazon Machine Image) are a customization of an EC2 instance. By customizing our base image in this way, we can have a faster bootup and configuration time because the required specific software would be pre-packaged. AMIs are built for a specific region but can also be copied to different regions. You can launch EC2 instances from a AWS public AMI (Amazon provided), your own AMI (that you make and maintain yourself), and an AWS marketplace AMI (third-party made & maintained, possibly for a profit).
+
+EC2 Image Builder is used to automate the creation of VMs or container images. It streamlines the creation, validation, and testing of EC2 AMIs. It can be run on a schedule of your liking. The service itself is free, you only pay for the underlying resources created and used.
