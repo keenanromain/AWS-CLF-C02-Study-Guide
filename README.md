@@ -44,3 +44,4 @@ From an exam perspective, the following few instance types are most likely to fe
 
 Security Groups control how traffic is allowed into and out of our EC2 instances. Security groups only contain *allow* rules and can be thought of as a firewall on EC2 instances. By default, all inbound traffic is blocked and all outbound traffic is authorized.
 
+<img width="682" alt="Screen Shot 2024-12-09 at 2 50 59 PM" src="https://github.com/user-attachments/assets/cd9566cf-450b-4191-991d-96acd82c3dc3">
