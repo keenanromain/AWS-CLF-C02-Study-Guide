@@ -114,10 +114,10 @@ Auto Scaling Groups allow you to automatically scale out and in in order to eith
 
 ![image](https://github.com/user-attachments/assets/e17462cd-8e3b-40f5-b9e8-10f379015838)
 
-Some of the most common Auto Scaling Group strategies include Dynamic Scaling, Predictive Scaling, and Scheduled Scaling.
+Some of the most common Auto Scaling Group strategies include Dynamic Scaling, Predictive Scaling, and Scheduled Scaling:
 
-Dynamic scaling scales the capacity of your Auto Scaling group as traffic changes occur.
+1. Dynamic scaling scales the capacity of your Auto Scaling group as traffic changes occur.
 
-Predictive scaling works by analyzing historical load data to detect daily or weekly patterns in traffic flows. It uses this information to forecast future capacity needs so Amazon EC2 Auto Scaling can proactively increase the capacity of your Auto Scaling group to match the anticipated load.
+2. Predictive scaling works by analyzing historical load data to detect daily or weekly patterns in traffic flows. It uses this information to forecast future capacity needs so Amazon EC2 Auto Scaling can proactively increase the capacity of your Auto Scaling group to match the anticipated load.
 
-With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
+3. With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
