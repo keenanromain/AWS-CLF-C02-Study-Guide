@@ -109,3 +109,15 @@ There are four kinds of load balancers on AWS:
 4. Classic Load Balancer - Layer 4 & 7 and was retired in 2023. Likely not to feature on the exam.
 
 <img width="742" alt="Screen Shot 2024-12-12 at 1 52 28 PM" src="https://github.com/user-attachments/assets/798c8e31-117b-4661-86ae-8db12954181e" />
+
+Auto Scaling Groups allow you to automatically scale out and in in order to either add or remove servers based on your application's current load. You can prefigure a maximum and minimum number of instances to have running, replace unhealthy instances with healthy instances, and have all new instances automatically register with any load balancer you might be using.
+
+![image](https://github.com/user-attachments/assets/e17462cd-8e3b-40f5-b9e8-10f379015838)
+
+Some of the most common Auto Scaling Group strategies include Dynamic Scaling, Predictive Scaling, and Scheduled Scaling.
+
+Dynamic scaling scales the capacity of your Auto Scaling group as traffic changes occur.
+
+Predictive scaling works by analyzing historical load data to detect daily or weekly patterns in traffic flows. It uses this information to forecast future capacity needs so Amazon EC2 Auto Scaling can proactively increase the capacity of your Auto Scaling group to match the anticipated load.
+
+With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
