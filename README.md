@@ -74,3 +74,19 @@ Amazon FSx is a fully managed share file system alterantive with offerings for L
 
 
 <img width="657" alt="Screen Shot 2024-12-09 at 5 41 42 PM" src="https://github.com/user-attachments/assets/b9b64074-dab5-4305-b8ed-3b3d5740921e">
+
+Scalability means that an application or system has the capability to handle greater loads by adapting. There are two kinds of scalability; horizontal scaling and vertical scaling i.e. scaling out vs. scaling up. 
+
+Horizontal scaling means increasing the number of instances. For example, your application on AWS runs on a t2.micro EC2 instance but with more traffic it begins to get laggy. Scaling horizontally could mean spinning up three more t2.micro EC2 instances. Horizontal scalability is common for distributed systems like web applications. 
+
+Vertical scaling means increasing the size of an instance. For example, your application on AWS runs on a t2.micro EC2 instance but with more traffic it begins to get laggy. Scaling vertically could mean transfering your application over to a t2.large EC2 instance. Vertical scalability is common for non-distributed systems like databases.  
+
+High Availability usually goes hand in hand with horizontal scaling where your application is running in at least two Availability Zones.
+
+Scalability is the ability to accomodate a larger load by making the hardware stronger (scale up) or by adding nodes (scale out).
+
+Elasticity is once a system is scalable, there is the element 'auto-scaling' included so that the system can scale intelligently based on load.
+
+Elastic Load Balancers (ELBs) are servers that forward internet traffic to multiple servers (EC2 instances) downstream.
+
+![image](https://github.com/user-attachments/assets/f75ac73f-b642-4322-a49a-de5e4f412c3b)
