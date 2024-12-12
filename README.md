@@ -90,3 +90,22 @@ Elasticity is once a system is scalable, there is the element 'auto-scaling' inc
 Elastic Load Balancers (ELBs) are servers that forward internet traffic to multiple servers (EC2 instances) downstream.
 
 ![image](https://github.com/user-attachments/assets/f75ac73f-b642-4322-a49a-de5e4f412c3b)
+
+Why use a load balancer?
+
+1. Spread load across multiple downstream instances
+2. Expose a single point of access (DNS) to your application
+3. Seamlessly handle failures of downstream instances
+4. Do regular health checks to your instances
+5. Provide SSL termination (HTTPS) for your websites
+6. High Availability across zones
+
+An ELB is a managed load balancer. This means AWS guarantees that the load balancer is up and working, upgraded regularly, and highly available. It is possible to set up your own load balancer on EC2 but its a lot more effort in managing it on your own.
+
+There are four kinds of load balancers on AWS:
+1. Application Load Balancer (HTTP/HTTPS) - Layer 7
+2. Network Load Balancer (TCP) - Layer 4 and is the AWS ultra-high performance LB
+3. Gateway Load Balancer - Layer 3 and routes traffic to firewalls for inspection
+4. Classic Load Balancer - Layer 4 & 7 and was retired in 2023. Likely not to feature on the exam.
+
+<img width="742" alt="Screen Shot 2024-12-12 at 1 52 28 PM" src="https://github.com/user-attachments/assets/798c8e31-117b-4661-86ae-8db12954181e" />
