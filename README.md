@@ -121,3 +121,40 @@ Some of the most common Auto Scaling Group strategies include Dynamic Scaling, P
 2. Predictive scaling works by analyzing historical load data to detect daily or weekly patterns in traffic flows. It uses this information to forecast future capacity needs so Amazon EC2 Auto Scaling can proactively increase the capacity of your Auto Scaling group to match the anticipated load.
 
 3. With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
+
+Amazon S3 is infinity scaling storage. It is used for archives, backups, disaster recovery, media and application hosting, data lakes, hosting static websites, etc.
+
+S3 stores files in 'buckets'. Once a file is in a bucket, it is referred to as an 'object'. 
+
+S3 buckets must have a globally unique name across all regions and all AWS accounts. The name cannot have uppercases or underscores and it must be between 3 to 63 characters long.
+
+Even though the S3 bucket name must exist globally, the bucket itself is defined to a region.
+
+S3 objects have a key and the key is the full path to the object inside of the bucket.
+![image](https://github.com/user-attachments/assets/549cefae-c2b4-404b-9618-489b003bffa2)
+
+The 'value' for the object's key-value pair is the content of the file itself. The max object size is 5TB. All objects have corresponding metadata (including a Version ID in case you reupload the same file multiple times) and you can use tags to organize the objects that live inside your bucket.
+
+S3 Security is both user-based and resource-based. 
+
+User-based security includes IAM policies that can determine what kind of API calls and access a given user can have for your bucket. 
+
+<img width="679" alt="Screen Shot 2024-12-13 at 3 00 43 PM" src="https://github.com/user-attachments/assets/27317741-ad42-4bb3-ba01-b1bec3823edf" />
+
+
+Resource-based security includes Bucket Policies are rules applied at a universal bucket-wide level and Object Access Control Lists (ACL) for more precise rules.
+
+<img width="646" alt="Screen Shot 2024-12-13 at 3 00 12 PM" src="https://github.com/user-attachments/assets/081f5e04-5dc3-4bf8-aba7-d77615a48344" />
+
+
+Bucket Policies are JSON based. Example below:
+
+<img width="789" alt="Screen Shot 2024-12-13 at 2 58 18 PM" src="https://github.com/user-attachments/assets/02db967e-ca5c-4d51-8d9f-faf13472ac57" />
+
+For AWS services to get access to S3, they will need an IAM Role
+
+<img width="672" alt="Screen Shot 2024-12-13 at 3 01 44 PM" src="https://github.com/user-attachments/assets/adf8a483-d549-43d2-8247-e598b852f1c2" />
+
+You can version your files in S3 which is helpful for backups. Versioning is enabled at the bucket level. It is best practice to version your buckets to protect against unintended deletes and its easy to roll back to a previous version. 
+
+You can also have your S3 bucket replicate it's contents to another bucket such as replicating from one bucket in the US (us-east-1) to Europe (eu-west-2). Uses cases include lowering latency for users to access content, adhering to local compliance laws, disaster recovery, etc. To replicate your bucket's content, you must have versioning enabled.
