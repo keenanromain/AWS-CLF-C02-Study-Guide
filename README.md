@@ -179,3 +179,13 @@ The main storage classes are below:
 By default, S3 does server-side encryption. This means S3 does the encryption once it receives the uploaded object. However, you can also perform client-side encryption where you encrypt the file prior to uploading into S3. 
 
 IAM Access Analyzer for S3 ensures only the intended people have access to your S3 bucket. It evaluates S3 bucket policies, S3 Access Control Lists (ACLs) and IAM policies.
+
+<img width="1202" alt="Screen Shot 2024-12-14 at 12 22 49 PM" src="https://github.com/user-attachments/assets/29af14b9-66aa-4fb6-b621-35b0417c2462" />
+
+The AWS Snow Family (comprised of AWS Snowcone, Snowball, and AWS Snowmobile) are a collection of physical devices that are used to physically transport up to exabytes of data in to and out of AWS. Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities. If you need to upload data into AWS but cannot do so over the internet due to a lack consistent network connectivity, security concerns, etc. you can have a Snow device come to you and after you load your data into the device, you ship it back to an AWS data center.
+
+<img width="836" alt="Screen Shot 2024-12-14 at 12 27 36 PM" src="https://github.com/user-attachments/assets/05b55fc5-ae77-4715-ad1b-c0edc9d4603e" />
+
+As a general rule of thumb, if it would take you more than a week to transfer your data into AWS you should use a Snow device!
+
+For hybrid cloud architectures (where part of your infrastructure is in AWS and other parts remain on-premise) that require S3 storage, you need to use **Storage Gateway** as a means to access S3. 
