@@ -189,3 +189,27 @@ The AWS Snow Family (comprised of AWS Snowcone, Snowball, and AWS Snowmobile) ar
 As a general rule of thumb, if it would take you more than a week to transfer your data into AWS you should use a Snow device!
 
 For hybrid cloud architectures (where part of your infrastructure is in AWS and other parts remain on-premise) that require S3 storage, you need to use **Storage Gateway** as a means to access S3. 
+
+**Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
+
+**Transcribe** automatically converts speech into text. While using it, you can automatically remove Personally Identifiable Information (PII) using Redaction.
+
+**Polly** is the opposite of Transcribe. It converts text into speech.
+
+**Translate** is a language translation service. It allows you to localize content such as webites for international users and easily translates large volumes of text accurately and effciently.
+
+**Lex** is the technology that powers Amazon Alexa. It provides automatic speech recognition to convert speech into text.
+
+**Connect** is a virtual cloud-based call center that can receive calls, create contact flows, and integrate with other CRM systems or other AWS services.
+
+**Comprehend** is a fully managed service for Natural Language Processing (NLP). It uses machine learning to try and discern meaning and insights in bodies of text. 
+
+**SageMaker** is a fully managed service for developers and data scientists to build Machine Learning models. It is a one-stop shop for everything you need to develop your own ML tooling.
+
+**Forecast** is a fully managed service to deliver highly accurate forecasts. Use cases include product demand planning, financial planning, resoruce planning, etc.
+
+**Kendra** is a fully managed document search service powered by ML. It extracts relevant information and answers from a document (text, pdf, HTML, PowerPoint, FAQs, etc). 
+
+**Personalize** is a fully managed ML-service to build apps with real time personalized recommendations. For example, a user on your site has bought a lot of gardening tools and you want to suggest recommendations for them to buy that are relevant to their previous purchases.
+
+**Textract** automatically extracts text, handwriting, and data from any scanned documents using AI and ML. For example, with a driver's license Textract can pull out all the relevant information and store it in JSON.  
