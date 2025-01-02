@@ -190,6 +190,8 @@ As a general rule of thumb, if it would take you more than a week to transfer yo
 
 For hybrid cloud architectures (where part of your infrastructure is in AWS and other parts remain on-premise) that require S3 storage, you need to use **Storage Gateway** as a means to access S3. 
 
+Many database technologies can be run on EC2, but you must handle setting up database resiliency, backups, patching, high availability, fault tolerance, scaling, etc. yourself.
+
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
 **Transcribe** automatically converts speech into text. While using it, you can automatically remove Personally Identifiable Information (PII) using Redaction.
