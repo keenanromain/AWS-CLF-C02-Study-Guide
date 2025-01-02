@@ -192,7 +192,15 @@ For hybrid cloud architectures (where part of your infrastructure is in AWS and 
 
 Many database technologies can be run on EC2, but you must handle setting up database resiliency, backups, patching, high availability, fault tolerance, scaling, etc. yourself.
 
-Amazon's RDS stands for Relational Database Service. It uses SQL as its querying language and is managed by AWS. You can choose to have your RDS instance run MySQL, Postgres, MariaDB, Oracle, Microsoft SQL Server, IBM DB2, or Amazon's proprietary relational DB called Aurora.
+Amazon RDS stands for Relational Database Service. It uses SQL as its querying language and is managed by AWS. You can choose to have your RDS instance run MySQL, Postgres, MariaDB, Oracle, Microsoft SQL Server, IBM DB2, or Amazon's proprietary relational DB called Aurora.
+
+As a managed service, AWS is responsible for automated provisioning and OS patching, continuous backups and restores to specific points of time, monitoring dashboards, and read replicas for improved DB read performance, maintenance windows for upgrades, scaling capabilities, and Multi-AZ setup for disaster recovery.
+
+However, you cannot SSH into the underlying DB server where your DB instance is running.
+
+As briefly mentioned above, Amazon Aurora is Amazon's proprietary (not open-sourced) relational DB. It can run both MySQL and Postgres yet has a 5x performance improvement over MySQL on RDS and 3x performance improvement over Postgres on RDS. Aurora storage automatically grows in increments of 10GB up to 128 TB.
+
+Amazon Aurora Serverless is an on-demand, autoscaling configuration for Amazon Aurora. It automatically starts up, shuts down, and scales capacity up or down based on your application's needs. This way, you can run your database in the cloud without managing any database instances. Good use cases include infrequent, intermittent, and unpredictable workloads.
 
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
