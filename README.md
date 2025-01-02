@@ -202,6 +202,13 @@ As briefly mentioned above, Amazon Aurora is Amazon's proprietary (not open-sour
 
 Amazon Aurora Serverless is an on-demand, autoscaling configuration for Amazon Aurora. It automatically starts up, shuts down, and scales capacity up or down based on your application's needs. This way, you can run your database in the cloud without managing any database instances. Good use cases include infrequent, intermittent, and unpredictable workloads.
 
+Read Replica Deployments allow you to scale the read workload of your DB. They work by creating copies of your main db that are updated to constantly match whatever is in your main db. These copies are then what users interact with when querying for information on your application's backend. You can create up to 15 Read Replicas depending on the amount of traffic your application receives. When it comes to DB writes, the writes only go to the main DB and that change is then propogated out to the Read Replicas.
+
+Multi-AZ Deployments is for failovers in case there is a physical outage at an Amazon AZ. It works by creating the backup failover DB in a different AZ that exists purely just as insurance in the event of a problem occuring with your main DB. Data is only ever written or read from the main DB until a failover occurs where the backup DB becomes the new main DB. You can only have one other AZ to failover to.
+
+Multi-Region Deployments are the same as Multi-AZ Deployments, except the failover exists at the level of regions instead of AZ. This mitigates the chance of a crisis further, but is more expensive than having a Multi-AZ failover strategy. 
+
+--------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
 **Transcribe** automatically converts speech into text. While using it, you can automatically remove Personally Identifiable Information (PII) using Redaction.
