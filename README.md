@@ -192,6 +192,8 @@ For hybrid cloud architectures (where part of your infrastructure is in AWS and 
 
 Many database technologies can be run on EC2, but you must handle setting up database resiliency, backups, patching, high availability, fault tolerance, scaling, etc. yourself.
 
+Amazon's RDS stands for Relational Database Service. It uses SQL as its querying language and is managed by AWS. You can choose to have your RDS instance run MySQL, Postgres, MariaDB, Oracle, Microsoft SQL Server, IBM DB2, or Amazon's proprietary relational DB called Aurora.
+
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
 **Transcribe** automatically converts speech into text. While using it, you can automatically remove Personally Identifiable Information (PII) using Redaction.
