@@ -240,6 +240,12 @@ Database Migration Service is a quick and secure database migration tool. It is 
 
 Docker is a software development platform to deploy applications. These apps are packaged into containers that can run on any OS. Apps run the same, regardless of where they're run, without compatibility issues, with predictable behavior and being easier to maintain/deploy. You can scale containers up and down very quickly. Docker images are stored in Docker Repositories like the public Docker Hub (https://hub.docker.com/) or the private Amazon service Elastic Container Registry (ECR).
 
+Elastic Container Service (ECS) is used to launch Docker containers on AWS. While AWS manages the starting and stopping of containers, you must provision & maintain the infrastructure w/ ECS. Most ECS infrastructure is a groupping of EC2 instances running underneath. However, ECS pairs with Application Load Balancing in order to better distribute load across EC2 instances though the ECS service is smart enough to know where to put newly created Docker containers acroos your EC2 instances.
+
+Fargate is also used to launch Docker containers on AWS, but is a fully-managed serverless service. You don't need to provision the infrastructure. AWS will just run the Dockers that you need to run based on the RAM / CPU that your application requires.
+
+Elastic Container Registry (ECR) is a private Docker registry in AWS. It is where you store the Docker images that will be run by either ECS or Fargate. 
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
