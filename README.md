@@ -280,3 +280,13 @@ Lightsail is a simplified and one-stop shop implementation of the most important
 **Personalize** is a fully managed ML-service to build apps with real time personalized recommendations. For example, a user on your site has bought a lot of gardening tools and you want to suggest recommendations for them to buy that are relevant to their previous purchases.
 
 **Textract** automatically extracts text, handwriting, and data from any scanned documents using AI and ML. For example, with a driver's license Textract can pull out all the relevant information and store it in JSON.  
+
+-----
+
+Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
+
+Cognito is a way to provide identity access into AWS resources for the users of your application. For example, a retail brand with millions of customers should be able to have their users access shopping image data that is hosted in S3. IAM Users should be reserved to the relevant staff.
+
+Directory Service offers a fully-managed, native Microsoft Active Directory. It provides centralized security management. AWS's Managed Microsoft AD is the option to manage your own Active Directory within the AWS ecosystem. AD Connector is a proxy that redirects requests received in AWS out of AWS and into an on-premise AD. Simple AD is the fully-managed AD service option.
+
+IAM Identity Center is the successor to AWS Single Sign-On. It provides one login for all AWS accounts in AWS Organizations.
