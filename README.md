@@ -258,9 +258,9 @@ Lightsail is a simplified and one-stop shop implementation of the most important
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
 
-Kinesis
+Kinesis is a service for managing real-time Big Data streams. It collects, processes, and analyzes real-time streaming data at any scale.
 
-SNS
+SNS is a managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users with SMS. Event publishers only need to send a message to a single SNS topic for all of that topic's subscribers to receive it.
 
 MQ
 
