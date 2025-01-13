@@ -230,6 +230,8 @@ DocumentDB is an AWS-implementation of MongoDB. It is a NoSQL database that is f
 
 Neptune is a fully managed graph database. popular graph dataset examples include social networks (Instagram, Facebook, Tiktok, etc.) or knowledge graphs (Wikipedia). Neptune is highly available across 3 AZs with up to 15 read replicas. Can store up to billions of relations and query the graph with millisecond latency. 
 
+Timestream is a fully managed serverless time series database. It has built-in time-series analytics functions, helping you identify trends and patterns in near real time. It can automatically scale up or down to adjust capacity. It stores and analyzes trillions of events per day and is 1,000 times faster & 1/10th of the cost of relational databases.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
