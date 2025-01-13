@@ -238,6 +238,8 @@ Glue is a managed extract, transform, and load (ETL) service. It is useful to pr
 
 Database Migration Service is a quick and secure database migration tool. It is resilient and self-healing. During the migration of data from a source database to a target database, the source database remains available and useable. It supports homogenous migrations (i.e. an on-premise Oracle instance to an AWS Oracle instance) as well as heterogenous migrations (an on-premise Microsoft SQL Server instance to an AWS Oracle instance).
 
+Docker is a software development platform to deploy applications. These apps are packaged into containers that can run on any OS. Apps run the same, regardless of where they're run, without compatibility issues, with predictable behavior and being easier to maintain/deploy. You can scale containers up and down very quickly. Docker images are stored in Docker Repositories like the public Docker Hub (https://hub.docker.com/) or the private Amazon service Elastic Container Registry (ECR).
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
