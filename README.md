@@ -214,6 +214,8 @@ DyanmoDB is a fully managed and highly available NoSQL database service with rep
 
 DynamoDB Accelerator (DAX) is a fully managed in-memory cache for DynamoDB. DAX is a superior memory store cache for DynamoDB as compared to ElastiCache. DAX is a 10x performance improvement, offering microsecond latency compared to the normal single digit milisecond latency.
 
+ DynamoDB Global Tables is a fully managed, serverless, multi-Region, and multi-active database. Global tables provide you 99.999% availability, increased application resiliency, and improved business continuity. A DynamoDB global table is comprised of multiple replica tables. When data is written to any replica table, DynamoDB automatically replicates that data to all other replica tables in the global table. If your application processing is interrupted in one Region, there is no need for a database failover, as global tables’ multi-active architecture allows customers to read and write to any replica table. 
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
