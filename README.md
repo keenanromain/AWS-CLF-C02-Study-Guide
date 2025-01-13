@@ -216,11 +216,15 @@ DynamoDB Accelerator (DAX) is a fully managed in-memory cache for DynamoDB. DAX 
 
 DynamoDB Global Tables is a fully managed, serverless, multi-Region, and multi-active database. Global tables provide you 99.999% availability, increased application resiliency, and improved business continuity. A DynamoDB global table is comprised of multiple replica tables. When data is written to any replica table, DynamoDB automatically replicates that data to all other replica tables in the global table. If your application processing is interrupted in one Region, there is no need for a database failover, as global tables’ multi-active architecture allows customers to read and write to any replica table. 
 
-Redshift is an Online Analytical Processing (OLAP) database which is used for analytics and data warehousing. This is opposed to Online Transactional Processing (OLTP) databases which are typically used as application backends. Redshift is based on PostgreSQL. It has 10x better performance compared to other warehouses and scales to petabytes of data. It has columnar storage of data instead of rows and can perform Massive Parallel Query Execution. It has a SQL interface to perform queries and integrates with business intelligence tools such as AWS Quicksight and Tableau.
+Redshift is an Online Analytical Processing (OLAP) database which is used for analytics and data warehousing. This is opposed to Online Transactional Processing (OLTP) databases which are typically used as application backends. Redshift is based on PostgreSQL. It has 10x better performance compared to other warehouses and scales to petabytes of data. It has columnar storage of data instead of rows and can perform Massive Parallel Query Execution. It has a SQL interface to perform queries and integrates with business intelligence tools such as Amazon QuickSight and Tableau.
 
 Redshift Serverless makes it convenient for you to run and scale analytics without having to provision and manage an on-premises data warehouse. Redshift Serverless automatically provisions and scales data warehouse capacity to deliver fast performance for demanding and unpredictable workloads. You pay only for the capacity that you use.  
 
 Elastic MapReduce (EMR) helps create Hadoop clusters for Big Data for analysis and processing. When using EMR, you can create a cluster made of hundreds of EC2 instances. Also supports other Hadoop-related technologies such as Apache Spark, HBase, Presto, Flink, etc. and EMR takes care of all of the relevant provisioning and configuration.
+
+Athena is a serverless querying service to perform analytics against objects stored in S3 buckets. It uses standard SQL language to query the files. The S3 objects can be formatted in different ways such as CSV, JSON, ORC, Parquet, etc.
+
+QuickSight is a serverless Machine Learning-based business intelligence tool to create interactive dashboards to visually represent data.
 
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
