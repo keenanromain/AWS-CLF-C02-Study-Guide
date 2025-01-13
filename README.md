@@ -248,6 +248,8 @@ Elastic Container Registry (ECR) is a private Docker registry in AWS. It is wher
 
 Elastic Kubernetes Service (EKS) allows you to launch managed Kubernetes clusters on AWS. Kubernetes is an open-source system for the management, deployment, and scaling of containerized apps like Docker. Containers can be hosted on EC2 for servers underneath or Fargate for serverless. Kubernetes itself is cloud agnostic and can be run on other clouds or on-premise like any other open-source technology.
 
+Lambda is a serverless allows you to run code without provisioning or managing servers. They are virtual functions of code that you write and publish to Lambda that then execute on-demand based on events that you specify. It removes the need to continuously have servers up and running for compute functionality. Scaling with Lambda is automated. It is easily integrated with the AWS monitoring Solution CloudWatch and the code for Lambda can be written in multiple languages. You can also run container images on Lambda though it is better to run Docker images on ECS/Fargate.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
