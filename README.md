@@ -254,6 +254,8 @@ API Gateway is the tool you'd use to build a serverless API in AWS. It is a full
 
 Batch is a fully-managed batch processing service. It allows you to run 100,000s of computing batch jobs efficiently and easily. Batch jobs are jobs that have a start and an end as opposed to jobs that must be running continuously. Batch provisions the right amount of compute and memory that you need either on EC2 regular instances or spot instances. You schedule the batch job with Batch and the service does the rest.
 
+Lightsail is a simplified and one-stop shop implementation of the most important AWS services for those wanting to use the cloud, but have little cloud knowledge or experience. As a product, it is basically a combination of virtual servers, storage, databases, and networking. Lightsail can provide monitoring and alert notifications. Because it has limited integrations with the rest of AWS, there is no auto-scaling.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
