@@ -226,6 +226,10 @@ Athena is a serverless querying service to perform analytics against objects sto
 
 QuickSight is a serverless Machine Learning-based business intelligence tool to create interactive dashboards to visually represent data.
 
+DocumentDB is an AWS-implementation of MongoDB. It is a NoSQL database that is fully managed, highly available, with data replication across three AZs. DocumentDB storage automatically grows in increments of 10GBs. Automatically scales to workloads with millions of requests per second.
+
+Neptune is a fully managed graph database. popular graph dataset examples include social networks (Instagram, Facebook, Tiktok, etc.) or knowledge graphs (Wikipedia). Neptune is highly available across 3 AZs with up to 15 read replicas. Can store up to billions of relations and query the graph with millisecond latency. 
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
