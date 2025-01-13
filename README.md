@@ -250,6 +250,10 @@ Elastic Kubernetes Service (EKS) allows you to launch managed Kubernetes cluster
 
 Lambda is a serverless allows you to run code without provisioning or managing servers. They are virtual functions of code that you write and publish to Lambda that then execute on-demand based on events that you specify. It removes the need to continuously have servers up and running for compute functionality. Scaling with Lambda is automated. It is easily integrated with the AWS monitoring Solution CloudWatch and the code for Lambda can be written in multiple languages. You can also run container images on Lambda though it is better to run Docker images on ECS/Fargate.
 
+API Gateway is the tool you'd use to build a serverless API in AWS. It is a fully-managed service for developers to easily create, publish, maintain, and monitor secure APIs for other services to access. It is fully scalable and both RESTful and WebSocket APIs can be built using it.
+
+Batch is a fully-managed batch processing service. It allows you to run 100,000s of computing batch jobs efficiently and easily. Batch jobs are jobs that have a start and an end as opposed to jobs that must be running continuously. Batch provisions the right amount of compute and memory that you need either on EC2 regular instances or spot instances. You schedule the batch job with Batch and the service does the rest.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
