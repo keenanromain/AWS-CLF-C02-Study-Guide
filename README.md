@@ -232,6 +232,12 @@ Neptune is a fully managed graph database. popular graph dataset examples includ
 
 Timestream is a fully managed serverless time series database. It has built-in time-series analytics functions, helping you identify trends and patterns in near real time. It can automatically scale up or down to adjust capacity. It stores and analyzes trillions of events per day and is 1,000 times faster & 1/10th of the cost of relational databases.
 
+Managed Blockchain makes it possible to build applications where multiple parties can execute transactions without the need for a trusted, central, authority. Managed Blockchain makes it possible to join public blockchain networks and to create your own scaleable private network. It is currently compatable with the Hyperledger Fabric and Ethereum frameworks.
+
+Glue is a managed extract, transform, and load (ETL) service. It is useful to prepare and transform data in preparation for analytics. It is fully serverless.
+
+Database Migration Service is a quick and secure database migration tool. It is resilient and self-healing. During the migration of data from a source database to a target database, the source database remains available and useable. It supports homogenous migrations (i.e. an on-premise Oracle instance to an AWS Oracle instance) as well as heterogenous migrations (an on-premise Microsoft SQL Server instance to an AWS Oracle instance).
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
