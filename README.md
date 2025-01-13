@@ -208,6 +208,12 @@ Multi-AZ Deployments is for failovers in case there is a physical outage at an A
 
 Multi-Region Deployments are the same as Multi-AZ Deployments, except the failover exists at the level of regions instead of AZ. This mitigates the chance of a crisis further, but is more expensive than having a Multi-AZ failover strategy. 
 
+ElastiCache provides managed Memcached and Redis caches. Caches are in-memory data stores with low latency. They are typically used in tandem with other databases like RDS. This is because the main purpose is to help reduce load off of independent database applications for read intensive workloads. 
+
+DyanmoDB is a fully managed and highly available NoSQL database service with replication across 3 AZs. It scales to massive workloads and can perform millions of requests per second, can have trillions of rows, and 100s of TB of storage. It has single-digit millisecond latency and is integrated with IAM for security, authorization, and administration.
+
+DynamoDB Accelerator (DAX) is a fully managed in-memory cache for DynamoDB. DAX is a superior memory store cache for DynamoDB as compared to ElastiCache. DAX is a 10x performance improvement, offering microsecond latency compared to the normal single digit milisecond latency.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
