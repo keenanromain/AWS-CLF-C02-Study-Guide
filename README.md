@@ -246,6 +246,8 @@ Fargate is also used to launch Docker containers on AWS, but is a fully-managed 
 
 Elastic Container Registry (ECR) is a private Docker registry in AWS. It is where you store the Docker images that will be run by either ECS or Fargate. 
 
+Elastic Kubernetes Service (EKS) allows you to launch managed Kubernetes clusters on AWS. Kubernetes is an open-source system for the management, deployment, and scaling of containerized apps like Docker. Containers can be hosted on EC2 for servers underneath or Fargate for serverless. Kubernetes itself is cloud agnostic and can be run on other clouds or on-premise like any other open-source technology.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
