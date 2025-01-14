@@ -262,7 +262,7 @@ Cloud Development Kit (CDK) makes it possible to define your cloud infrastructur
 
 Elastic Beanstalk is a developer-oriented deployment tool for easily standing up an application on the AWS infrastructure. It makes use of the various AWS services required for a healthy and scalable application (RDS, EC2, Application Load Balancers, Auto-Scaling Groups etc.) but all in one view that is easiers for devs to refer to. Beanstalk is a platform as a service. Beanstalk is a free and managed service, but you must pay for the underlying resources provisioned. All you need to care about is writing the code and Beanstalk will do the rest.
 
-CodeDeploy is another way to deploy code automatically. It works with both EC2 instances and on-premise servers.
+CodeDeploy is another way to deploy code automatically. It is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services. 
 
 -----
 
