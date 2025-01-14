@@ -260,6 +260,10 @@ CloudFormation is a declarative way of outlining your AWS infrastructure, for an
 
 Cloud Development Kit (CDK) makes it possible to define your cloud infrastructure using a familiar programming language. The code is then compiled into a CloudFormation template to be run as Infrastructure as Code. This makes it possible to deploy application runtime code and the underlying infrastructure code together.
 
+Elastic Beanstalk is a developer-oriented deployment tool for easily standing up an application on the AWS infrastructure. It makes use of the various AWS services required for a healthy and scalable application (RDS, EC2, Application Load Balancers, Auto-Scaling Groups etc.) but all in one view that is easiers for devs to refer to. Beanstalk is a platform as a service. Beanstalk is a free and managed service, but you must pay for the underlying resources provisioned. All you need to care about is writing the code and Beanstalk will do the rest.
+
+CodeDeploy is another way to deploy code automatically. It works with both EC2 instances and on-premise servers.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
