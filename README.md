@@ -272,6 +272,7 @@ CodePipeline is an orchestration tool to manage the different steps for code bei
 
 CodeArtifact is a managed artifact repository service that lets you securely store, publish, and share software packages often known as artifacts. Artifacts are a collection of files that define an application’s architecture, design, and functionality. It also includes dependencies, library resources, and packages that are required during the software-creating phase of an application. 
 
+Systems Manager (SSM) helps you manage your EC2 and On-Premise systems at scale. It is a hybrid AWS service. It is a secure end-to-end management solution for resources on AWS and elsewhere in a single location.
 
 -----
 
