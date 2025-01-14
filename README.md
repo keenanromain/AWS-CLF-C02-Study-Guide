@@ -256,6 +256,10 @@ Batch is a fully-managed batch processing service. It allows you to run 100,000s
 
 Lightsail is a simplified and one-stop shop implementation of the most important AWS services for those wanting to use the cloud, but have little cloud knowledge or experience. As a product, it is basically a combination of virtual servers, storage, databases, and networking. Lightsail can provide monitoring and alert notifications. Because it has limited integrations with the rest of AWS, there is no auto-scaling.
 
+CloudFormation is a declarative way of outlining your AWS infrastructure, for any resource. This is known as "Infrastructure as Code" and it ensures that no resources are created manually which is helpful in controlling the way resources are made or deleted. All resource changes are reviewed through code. 
+
+-----
+
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
 
 Kinesis is a service for managing real-time Big Data streams. It collects, processes, and analyzes real-time streaming data at any scale.
