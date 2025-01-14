@@ -264,6 +264,15 @@ Elastic Beanstalk is a developer-oriented deployment tool for easily standing up
 
 CodeDeploy is another way to deploy code automatically. It is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services. 
 
+CodeBuild is a fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+
+CodePipeline is an orchestration tool to manage the different steps for code being pushed into production. It is the CICD tool for AWS. 
+
+<img width="1153" alt="Screen Shot 2025-01-14 at 10 09 24 PM" src="https://github.com/user-attachments/assets/1a2fb066-3501-4673-bfa1-3e82dd203c91" />
+
+CodeArtifact is a managed artifact repository service that lets you securely store, publish, and share software packages often known as artifacts. Artifacts are a collection of files that define an application’s architecture, design, and functionality. It also includes dependencies, library resources, and packages that are required during the software-creating phase of an application. 
+
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
