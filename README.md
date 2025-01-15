@@ -276,6 +276,10 @@ Systems Manager (SSM) helps you manage your EC2 and On-Premise systems at scale.
 
 Route53 is a managed Domain Name System (DNS). DNS is a collection of rules and records which help clients understand how to reach a server through URLs. Route53 is highly available and it enables custom DNS routing policies to reduce latency. The most common routing policies are the Simple Routing Policy, Weighted Routing Policy, Latency Routing Policy, and Failover Routing Policy.
 
+CloudFront is a Content Delivery Network (CDN) that improves user performance of your application by caching content near to where your users are. This is done through AWS having 216+ edge locations (points of presence) in their global network. CloudFront has DDOS protection and integrates with Shield and Firewall.
+
+S3 Transfer Acceleration can accelerate long-distance transfers to and from your Amazon S3 buckets. It is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances. The longer the distance between your client application (mobile, web application, or upload tool) and the target S3 bucket, the more S3 Transfer Acceleration can help. 
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
