@@ -290,6 +290,11 @@ WaveLength is embedded AWS capability within various telecommunication providers
 
 LocalZones places AWS compute, storage, databases, and other services closer to end users to run latency-sensitive applications. It extends your VPC to more physical locations.
 
+*CloudWatch*
+
+- CloudWatch Metrics provides metrics for every service in AWS. A metric is a variable to monitor in order to have relevant insights into the ongoing performance of your services. Metrics have timestamps as part of the data it provides. Using CloudWatch, you can create dashboards in order to get a visual representation of your statistics.
+- CloudWatch Alarms provide alarms that can be triggered to send you a notification based on certain metrics such as failures. Automated actions based on CloudWatch Alarms include self-mitigation efforts such as scaling servers when needed, informing human stakeholders through SNS topic publications, or automated EC2 actions such as stopping, starting, or restaring a server. 
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
