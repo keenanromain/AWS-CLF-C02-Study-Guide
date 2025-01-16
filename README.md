@@ -293,7 +293,8 @@ LocalZones places AWS compute, storage, databases, and other services closer to 
 *CloudWatch*
 
 - CloudWatch Metrics provides metrics for every service in AWS. A metric is a variable to monitor in order to have relevant insights into the ongoing performance of your services. Metrics have timestamps as part of the data it provides. Using CloudWatch, you can create dashboards in order to get a visual representation of your statistics.
-- CloudWatch Alarms provide alarms that can be triggered to send you a notification based on certain metrics such as failures. Automated actions based on CloudWatch Alarms include self-mitigation efforts such as scaling servers when needed, informing human stakeholders through SNS topic publications, or automated EC2 actions such as stopping, starting, or restaring a server. 
+- CloudWatch Alarms provide alarms that can be triggered to send you a notification based on certain metrics such as failures. Automated actions based on CloudWatch Alarms include self-mitigation efforts such as scaling servers when needed, informing human stakeholders through SNS topic publications, or automated EC2 actions such as stopping, starting, or restaring a server.
+- CloudWatch Logs collect log files. It collects logs from various services and houses them in a central location for viewing. The retention period of logs is adjustable.
 
 -----
 
