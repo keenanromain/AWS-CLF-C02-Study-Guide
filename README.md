@@ -306,6 +306,12 @@ CodeGuru provides automated code reviews and app performance recommendations. Th
 
 Health Dashboard provides a service history of all of your active services in active regions. It shows historical information for each day. Health Dashboard provides alerts and remediation guidance when AWS is experiencing issues that may impact you.
 
+Virtual Private Cloud (VPC) is a private network to deploy your resources in. A VPC is linked to a specific region. Within a VPC, you can have subnets which allow you to partition your network with the VPC. Subnets can be public (accessible from the internet) and private.
+
+Internet Gateways help our VPC's instances connect with the Internet. Public subnets have a route to the Internet Gateway.
+
+NAT Gateways (AWS-managed) and NAT instances (self-managed) allow your instances in Private Networks obtain access to the Internet for use cases such as OS updates while keeping your instances inaccessible.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
