@@ -280,6 +280,16 @@ CloudFront is a Content Delivery Network (CDN) that improves user performance of
 
 S3 Transfer Acceleration can accelerate long-distance transfers to and from your Amazon S3 buckets. It is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances. The longer the distance between your client application (mobile, web application, or upload tool) and the target S3 bucket, the more S3 Transfer Acceleration can help. 
 
+Global Accelerator is a global networking service that simplifies traffic management and improves performance by up to 60%. It works by leveraging the internal AWS network so tha you have access to endpoints in multiple AWS Regions. 
+
+<img width="1205" alt="Screen Shot 2025-01-16 at 12 13 15 PM" src="https://github.com/user-attachments/assets/d63e2dc1-5644-4edc-b763-e1f85bd2eac9" />
+
+Outposts simplifies managing of different infrastructure systems in a hybrid cloud arrangement where resources live both in AWS and on-premise. It does so by offering physical server racks that offer the same infrastructure, APIs, services, etc. as exists in AWS. AWS employees with bring the servers to your company location to help install the systems. You become responsible for the security of your server once it lives outside of AWS.
+
+WaveLength is embedded AWS capability within various telecommunication providers' datacenters to better support 5G technology for AWS services.
+
+LocalZones places AWS compute, storage, databases, and other services closer to end users to run latency-sensitive applications. It extends your VPC to more physical locations.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
