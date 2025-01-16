@@ -296,6 +296,16 @@ LocalZones places AWS compute, storage, databases, and other services closer to 
 - CloudWatch Alarms provide alarms that can be triggered to send you a notification based on certain metrics such as failures. Automated actions based on CloudWatch Alarms include self-mitigation efforts such as scaling servers when needed, informing human stakeholders through SNS topic publications, or automated EC2 actions such as stopping, starting, or restaring a server.
 - CloudWatch Logs collect log files. It collects logs from various services and houses them in a central location for viewing. The retention period of logs is adjustable.
 
+EventBridge (CloudWatch Events) is a serverless event bus that ingests data from your own apps, SaaS apps, and AWS services and routes that data to targets. You can also use EventBrdge to schedule events like Cron jobs.
+
+CloudTrail provides governance, compliance, and audting to your AWS account. It is enabled by defaut and it provides a digital trail of records for actions taken within AWS for both users and services.  It does this by retaining the history of all AWS accounts and service activity. It is common to integrate this service with CloudWatch Logs or S3 for storage. If something suspicious is happening or resources are being deleted, it is helpful to check CloudTrail first.
+
+X-Ray provides visual tracing of our application's network of services and their performance.
+
+CodeGuru provides automated code reviews and app performance recommendations. This is done through the CodeGuru Reviewer and CodeGuru Profiler respectively.
+
+Health Dashboard provides a service history of all of your active services in active regions. It shows historical information for each day. Health Dashboard provides alerts and remediation guidance when AWS is experiencing issues that may impact you.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
