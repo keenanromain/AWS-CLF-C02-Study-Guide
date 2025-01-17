@@ -346,6 +346,10 @@ SNS is a managed messaging service for communication, allowing messaging between
 
 MQ is a managed message broker service for RabbitMQ and ActiveMQ. This is helpful for traditional applications running on-premise that may be using protocols like MQTT, AMQP, STOMP, Openwite, etc. that need to be migrated into AWS. Instead of changing the system to conform to cloud native protocols like SNS or SQS, they can be lifted and shifted into AWS and run similarly to how they were run on-prem. MQ does not scale similarly to the cloud-native alternatives and runs on EC2 servers.
 
+Shield is a way to defend against Distributed Denial-of-Service (DDoS) attacks. Shield Advanced (os opposed to Shield Standard) offers 24/7 premium DDoS attack protection.
+
+Web Application Firewall (WAF) filters inbound requests into your AWS environment based on rules that you specify based on IP address, HTTP Header, HTTP Body, or URI string. These lists of rules are called Web Access Control Lists (web ACLS). WAF protects your applications from common web exploits on layer 7 such as SQL Injection and Cross-Site Scripting (XSS). It is deployed to Application Load Balancer, API Gateway, and CloudFront.
+
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
