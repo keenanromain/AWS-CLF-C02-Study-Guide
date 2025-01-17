@@ -334,7 +334,7 @@ Client VPN connects a user from their computer, using OpenVPN, to your private n
 
 Transit Gateway is for transitive peering across thousands of VPCs and your on-premise infrastructure in a hub-and-spoke (star) connection. One single gateway provides the connectivity.
 
-![Image](https://github.com/user-attachments/assets/69611dca-77a1-4c74-949f-ec8e713fec31)
+<img width="965" alt="Image" src="https://github.com/user-attachments/assets/9427f4f6-6634-4b47-afb4-40878049246c" />
 
 -----
 
