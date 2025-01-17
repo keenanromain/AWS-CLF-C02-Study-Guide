@@ -326,11 +326,15 @@ VPC Endpoints allow you to connect with AWS services over a private network inst
 
 PrivateLink is the most secure & scalable way to expose a service to 1000s of VPCs. It does not require VPC peering, InternetGateway, NAT, route tables, etc.
 
-Site-to-Site VPN connects an on-premise VPN to AWS. The connection is automatically encrypted and the communication is over the public internet.
+Site-to-Site VPN connects an on-premise VPN to AWS. The connection is automatically encrypted and the communication is over the public internet. The on-premise network must use a CustomerGateway (GGW) to connect into AWS and on the AWS you'll need a Virtual PrivateGateway (VGW).
 
 DirectConnect (DX) establishes a physical connection between your on-premise data center and AWS with private communication that is secure and fast. Because this requires setting up a private physical network, it usually takes around a month to complete the setup.
 
+Client VPN connects a user from their computer, using OpenVPN, to your private network in AWS and on-premise. It allows you to connect to your services using a private IP just as if you were inside of the private VPC.
 
+Transit Gateway is for transitive peering across thousands of VPCs and your on-premise infrastructure in a hub-and-spoke (star) connection. One single gateway provides the connectivity.
+
+<img width="1129" alt="Image" src="https://github.com/user-attachments/assets/c9a6b21f-9887-4bfd-b588-582b2a88545b" /> 
 
 -----
 
