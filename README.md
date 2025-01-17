@@ -336,6 +336,15 @@ Transit Gateway is for transitive peering across thousands of VPCs and your on-p
 
 <img width="965" alt="Image" src="https://github.com/user-attachments/assets/9427f4f6-6634-4b47-afb4-40878049246c" />
 
+
+Shield is a way to defend against Distributed Denial-of-Service (DDoS) attacks. Shield Advanced (os opposed to Shield Standard) offers 24/7 premium DDoS attack protection.
+
+Web Application Firewall (WAF) filters inbound requests into your AWS environment based on rules that you specify based on IP address, HTTP Header, HTTP Body, or URI string. These lists of rules are called Web Access Control Lists (web ACLS). WAF protects your applications from common web exploits on layer 7 such as SQL Injection and Cross-Site Scripting (XSS). It is deployed to Application Load Balancer, API Gateway, and CloudFront.
+
+Network Firewall is how you protect your entire VPC, from Layer 3 to Layer 7.
+
+Firewall Manager lets you manage all of your security rules in all of the accounts of your AWS organization in a central place. It's rules are applied to new resources and accounts as they are created.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
@@ -345,10 +354,6 @@ Kinesis is a service for managing real-time Big Data streams. It collects, proce
 SNS is a managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users with SMS. Event publishers only need to send a message to a single SNS topic for all of that topic's subscribers to receive it.
 
 MQ is a managed message broker service for RabbitMQ and ActiveMQ. This is helpful for traditional applications running on-premise that may be using protocols like MQTT, AMQP, STOMP, Openwite, etc. that need to be migrated into AWS. Instead of changing the system to conform to cloud native protocols like SNS or SQS, they can be lifted and shifted into AWS and run similarly to how they were run on-prem. MQ does not scale similarly to the cloud-native alternatives and runs on EC2 servers.
-
-Shield is a way to defend against Distributed Denial-of-Service (DDoS) attacks. Shield Advanced (os opposed to Shield Standard) offers 24/7 premium DDoS attack protection.
-
-Web Application Firewall (WAF) filters inbound requests into your AWS environment based on rules that you specify based on IP address, HTTP Header, HTTP Body, or URI string. These lists of rules are called Web Access Control Lists (web ACLS). WAF protects your applications from common web exploits on layer 7 such as SQL Injection and Cross-Site Scripting (XSS). It is deployed to Application Load Balancer, API Gateway, and CloudFront.
 
 --------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
