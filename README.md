@@ -306,11 +306,31 @@ CodeGuru provides automated code reviews and app performance recommendations. Th
 
 Health Dashboard provides a service history of all of your active services in active regions. It shows historical information for each day. Health Dashboard provides alerts and remediation guidance when AWS is experiencing issues that may impact you.
 
-Virtual Private Cloud (VPC) is a private network to deploy your resources in. A VPC is linked to a specific region. Within a VPC, you can have subnets which allow you to partition your network with the VPC. Subnets can be public (accessible from the internet) and private.
+Virtual Private Cloud (VPC) is a private network to deploy your resources in. A VPC is linked to a specific region. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS. Within a VPC, you can have subnets which allow you to partition your network with the VPC. Subnets can be public (accessible from the internet) and private.
 
 Internet Gateways help our VPC's instances connect with the Internet. Public subnets have a route to the Internet Gateway.
 
 NAT Gateways (AWS-managed) and NAT instances (self-managed) allow your instances in Private Networks obtain access to the Internet for use cases such as OS updates while keeping your instances inaccessible.
+
+Network Access Control Lists (NACLs) is a firewall that controls traffic to and from a VPC subnet. It has both ALLOW and DENY rules. They are attached at the subnet level and the rules only include IP address.
+
+Security Groups are a firewall that controls traffic to and from an EC2 Instances. It only has ALLOW rules. The rules include IP addresses and other security groups.
+
+<img width="1129" alt="Image" src="https://github.com/user-attachments/assets/c9a6b21f-9887-4bfd-b588-582b2a88545b" /> 
+
+VPC Flow Logs log all IP traffic going in and out of your VPC. It helps monitor and troubleshoot connectivity issues. VPC Flow Logs can be shipped to S3, CloudWatch Logs, Data Firehose.
+
+VPC Peering connects two or more different VPCs so that they can behave as if they were one giant network. For this to work, the IP range of both VPCs cannot overlap. VPC connections are not transitive, meaning if VPC A and VPC B are peering and you then decide to peer VPC B with VPC C, then VPC A *cannot* peer with VPC A unless you explicitly say so as well.
+
+VPC Endpoints allow you to connect with AWS services over a private network instead of the public internet. This gives your VPC enhanced security and lower latency when accessing the most common of AWS resources.
+
+PrivateLink is the most secure & scalable way to expose a service to 1000s of VPCs. It does not require VPC peering, InternetGateway, NAT, route tables, etc.
+
+Site-to-Site VPN connects an on-premise VPN to AWS. The connection is automatically encrypted and the communication is over the public internet.
+
+DirectConnect (DX) establishes a physical connection between your on-premise data center and AWS with private communication that is secure and fast. Because this requires setting up a private physical network, it usually takes around a month to complete the setup.
+
+
 
 -----
 
