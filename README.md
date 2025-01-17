@@ -345,6 +345,14 @@ Network Firewall is how you protect your entire VPC, from Layer 3 to Layer 7.
 
 Firewall Manager lets you manage all of your security rules in all of the accounts of your AWS organization in a central place. It's rules are applied to new resources and accounts as they are created.
 
+AWS customers are welcome to attempt security assessments and penetration testing against their AWS resources on the following services: EC2, Nat Gateways, Elastic Load Balancers, RDS, CloudFront, Aurora, Lambda, API Gateway, Lightsail, and Elastic Beanstalk.
+
+AWS has data encryption at rest and data encryption in transit. Data at rest include the data sitting in your databases, hard disks, S3 buckets, etc. Data in transit is data being moved from one place or another like with uploads, downloads, messaging between servers, etc.
+
+Key Management Service (KMS) is a service where AWS manages your encryption keys. You can opt into encrypting your data with KMS for EBS Volumes, S3, Redshift, RDS, and EFS. Other services are automatically encrypted on your behalf such as Storage Gateway, S3 Glacier, and CloudTrail Logs.  
+
+Cloud HSM is another service that provides encryption. AWS provides the encryption tooling, but you are responsible for managing the keys
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
