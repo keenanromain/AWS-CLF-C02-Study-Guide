@@ -403,7 +403,9 @@ IAM Access Analyzer finds out which resources are shared externally to mitigate 
 
 -----
 
-AWS Organizations is a global service that allows you to manage multiple AWS accounts. The main account is called the master account and the accounts linked to it are called children accounts. It consoldiates billing across all of your accounts and there a re pricing benefits from aggregated usage. Service Control Policies (SCPs) allow you to whitelist or blacklist IAM actions on users with roles in children accounts.
+Organizations is a global service that allows you to manage multiple AWS accounts. The main account is called the master account and the accounts linked to it are called children accounts. It consoldiates billing across all of your accounts and there a re pricing benefits from aggregated usage. Service Control Policies (SCPs) allow you to whitelist or blacklist IAM actions on users with roles in children accounts. Consolidated Billing for Organizations combines usage across all of your accounts to share pricing and more easily attain discounting from operating at scale. It provides a single bill to be covered.
+
+Control Tower it is an easy to setup and govern a secure and compliant multi-account AWS environment based on historical best practices. It automates the setup of your AWS Organizations in a few clicks, detect policy violations and remediates them, monitors compliance through dashboards, and implement Service Control Poliies (SCP) across your different organizations.
 
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
 
