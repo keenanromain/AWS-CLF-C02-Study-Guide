@@ -359,6 +359,20 @@ Secrets Manager is a secret store with the capability to rotate secrets every X 
 
 Artifact is a portal that gives AWS customers access to AWS compliance documentation and AWS agreements. It is to help support internal auditing and compliance.
 
+GuardDuty provides intelligent threat discovery to your AWS account. It uses machine learning algorithms to detect anomalies in your 3rd party data. It analyzes VPC Flow Logs, CloudTrail Logs, DNS Logs, S3 Logs, EBS Volumes, Lambda Network Activity, RDS/Aurora Login Activity, EKS Audit Logs, etc.
+
+Inspector is an automated security assessment service. It leverages the Systems Manager (SSM) agent on services like EC2 to perform it's tests. It analyzes against unintended network accessibility and known vulnerabilities against the OS. Inspector can also analyze container images being pushed into ECR and against lambda functions for software vulnerabilities and suspicious code dependencies. It sends its findings to Amazon EventBridge.
+
+Config helps with auditing and recording compliance with your AWS resources by recording your configurations and changes over time. It can work with S3 to have these records stored, perhaps also even analyzed with Athena.
+
+Macie is a fully managed data security and data privacy service that uses ML pattern matching to discover and protect your sensitive data in AWS. Sensitive data in S3, such as Personally Identifiable Information (PII), will be detected by Macie and it will then alert you of the discoveries.
+
+Security Hub is a central security tool that is used to manage various security tools across multiple aws accounts and automate security checks. It has integrated dasshboards highlighting current security and compliance statuses and automatically aggregates alerts.
+
+Detective analyzes, investigates, and quickly indetifies *the root cause* of security issues or suspicious activity using ML. It produces visualizations with details and context so you can address the main concern.
+
+Abuse is where you can report suspicious behavior occuring on AWS resources such as spam, port scanning, DDOS attacks, hosting illegal content, intrusion attempts, distributing malware, etc.  
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
