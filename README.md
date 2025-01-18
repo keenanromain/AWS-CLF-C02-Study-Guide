@@ -407,6 +407,10 @@ Organizations is a global service that allows you to manage multiple AWS account
 
 Control Tower it is an easy to setup and govern a secure and compliant multi-account AWS environment based on historical best practices. It automates the setup of your AWS Organizations in a few clicks, detect policy violations and remediates them, monitors compliance through dashboards, and implement Service Control Poliies (SCP) across your different organizations.
 
+Resource Access Manager (RAM) allows you to share resources in one account with another account as long as they are within the same organization in order to reduce resource duplication.
+
+Service Catalog is a self-service portal where admins can set high guardrails by predefining which resources are available for new or temporary users to use. It does so by running CloudFormation templates. This ensures that every new resource is properly configured, properly tag, and perfectly compliant with the standard set by the admins.
+
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
 
 Cognito is a way to provide identity access into AWS resources for the users of your application. For example, a retail brand with millions of customers should be able to have their users access shopping image data that is hosted in S3. IAM Users should be reserved to the relevant staff.
