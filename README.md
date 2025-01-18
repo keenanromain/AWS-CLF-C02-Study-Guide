@@ -419,6 +419,22 @@ Compute Optimizer helps reduce costs and improve your compute resources' perform
 
 Pricing Calculator estimates the cost of your architecture. 
 
+Billing Dashboard shows you the projected cost for the month and is helpful for a quick overview on the current price.
+
+Cost Allocation Tags allows us to track costs on a detailed level and group them together.
+
+Cost and Usage Reports are helpful for analyzing your AWS bill at the most granular level.
+
+Cost Explorer helps you forecast AWS usage up to 12 months ahead based on previous usage.
+
+Cost Anomaly Detector uses ML to continually monitor your cost and usage to detect any unusual spends. It learns from your unique and historic spending patterns.
+
+Servique Quotas inform you when you are close to reaching a set threshold for a service.
+
+Trusted Advsior gives you a high level assessment on your account. It provides recommendations to your account based on its performance, cost-optimization, security, fault tolerance, service limits, and operational excellence.
+
+![Image](https://github.com/user-attachments/assets/7335b9a6-062a-4d9f-9928-349c6f33c12b)
+
 -----
 
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
