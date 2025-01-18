@@ -413,6 +413,14 @@ Service Catalog is a self-service portal where admins can set high guardrails by
 
 Savings Plan is a service that helps you commit a certain amount of money per hour for 1 or 3 years. You can create a Machine Learning Savings Plan, an EC2 Savings Plan, and the more general Compute Savings Plan which also applies to EC2 as well as Lambda and Fargate.
 
+Compute Optimizer helps reduce costs and improve your compute resources' performance by analyzing your current workloads and recommendating optimal usage based on your needs. It will inform you what resource is under-utilized and what resource is over-provisioned to save you money and make each service perform as best as it can for you.
+
+<img width="368" alt="Image" src="https://github.com/user-attachments/assets/a0f2a336-d524-4a0c-b43d-4aaf69ccc9bc" />
+
+Pricing Calculator estimates the cost of your architecture. 
+
+-----
+
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
 
 Cognito is a way to provide identity access into AWS resources for the users of your application. For example, a retail brand with millions of customers should be able to have their users access shopping image data that is hosted in S3. IAM Users should be reserved to the relevant staff.
