@@ -403,6 +403,8 @@ IAM Access Analyzer finds out which resources are shared externally to mitigate 
 
 -----
 
+AWS Organizations is a global service that allows you to manage multiple AWS accounts. The main account is called the master account and the accounts linked to it are called children accounts. It consoldiates billing across all of your accounts and there a re pricing benefits from aggregated usage. Service Control Policies (SCPs) allow you to whitelist or blacklist IAM actions on users with roles in children accounts.
+
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
 
 Cognito is a way to provide identity access into AWS resources for the users of your application. For example, a retail brand with millions of customers should be able to have their users access shopping image data that is hosted in S3. IAM Users should be reserved to the relevant staff.
