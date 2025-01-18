@@ -411,6 +411,8 @@ Resource Access Manager (RAM) allows you to share resources in one account with 
 
 Service Catalog is a self-service portal where admins can set high guardrails by predefining which resources are available for new or temporary users to use. It does so by running CloudFormation templates. This ensures that every new resource is properly configured, properly tag, and perfectly compliant with the standard set by the admins.
 
+Savings Plan is a service that helps you commit a certain amount of money per hour for 1 or 3 years. You can create a Machine Learning Savings Plan, an EC2 Savings Plan, and the more general Compute Savings Plan which also applies to EC2 as well as Lambda and Fargate.
+
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
 
 Cognito is a way to provide identity access into AWS resources for the users of your application. For example, a retail brand with millions of customers should be able to have their users access shopping image data that is hosted in S3. IAM Users should be reserved to the relevant staff.
