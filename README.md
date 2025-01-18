@@ -373,17 +373,10 @@ Detective analyzes, investigates, and quickly indetifies *the root cause* of sec
 
 Abuse is where you can report suspicious behavior occuring on AWS resources such as spam, port scanning, DDOS attacks, hosting illegal content, intrusion attempts, distributing malware, etc.  
 
------
+IAM Access Analyzer finds out which resources are shared externally to mitigate against security risks from external sources.
 
-SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
+----
 
-Kinesis is a service for managing real-time Big Data streams. It collects, processes, and analyzes real-time streaming data at any scale.
-
-SNS is a managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users with SMS. Event publishers only need to send a message to a single SNS topic for all of that topic's subscribers to receive it.
-
-MQ is a managed message broker service for RabbitMQ and ActiveMQ. This is helpful for traditional applications running on-premise that may be using protocols like MQTT, AMQP, STOMP, Openwite, etc. that need to be migrated into AWS. Instead of changing the system to conform to cloud native protocols like SNS or SQS, they can be lifted and shifted into AWS and run similarly to how they were run on-prem. MQ does not scale similarly to the cloud-native alternatives and runs on EC2 servers.
-
---------
 **Rekognition** is used to find objects, people, text, scenes in images and videos using Machine Learning. It can do facial analysis and facial search to do user verification and people counting.
 
 **Transcribe** automatically converts speech into text. While using it, you can automatically remove Personally Identifiable Information (PII) using Redaction.
@@ -417,3 +410,16 @@ Cognito is a way to provide identity access into AWS resources for the users of 
 Directory Service offers a fully-managed, native Microsoft Active Directory. It provides centralized security management. AWS's Managed Microsoft AD is the option to manage your own Active Directory within the AWS ecosystem. AD Connector is a proxy that redirects requests received in AWS out of AWS and into an on-premise AD. Simple AD is the fully-managed AD service option.
 
 IAM Identity Center is the successor to AWS Single Sign-On. It provides one login for all AWS accounts in AWS Organizations.
+
+
+-----
+
+SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
+
+Kinesis is a service for managing real-time Big Data streams. It collects, processes, and analyzes real-time streaming data at any scale.
+
+SNS is a managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users with SMS. Event publishers only need to send a message to a single SNS topic for all of that topic's subscribers to receive it.
+
+MQ is a managed message broker service for RabbitMQ and ActiveMQ. This is helpful for traditional applications running on-premise that may be using protocols like MQTT, AMQP, STOMP, Openwite, etc. that need to be migrated into AWS. Instead of changing the system to conform to cloud native protocols like SNS or SQS, they can be lifted and shifted into AWS and run similarly to how they were run on-prem. MQ does not scale similarly to the cloud-native alternatives and runs on EC2 servers.
+
+--------
