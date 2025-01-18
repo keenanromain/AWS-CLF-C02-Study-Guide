@@ -435,6 +435,8 @@ Trusted Advsior gives you a high level assessment on your account. It provides r
 
 ![Image](https://github.com/user-attachments/assets/7335b9a6-062a-4d9f-9928-349c6f33c12b)
 
+<img width="1323" alt="Image" src="https://github.com/user-attachments/assets/ff5198fe-c299-4c37-9941-9ce2867de65b" />
+
 -----
 
 Security Token Service (STS) enables you to create temporary, limited-privledges credentials to access AWS resources. Therse short-term credentials are configured to expire at a time that you specify.
