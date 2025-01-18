@@ -353,6 +353,12 @@ Key Management Service (KMS) is a service where AWS manages your encryption keys
 
 Cloud HSM is another service that provides encryption. AWS provides the encryption tooling, but you are responsible for managing the keys
 
+Certificate Manager lets you easily provision, manage, and deploy SSL/TLS certificates which provide in-flight encryption for websites.
+
+Secrets Manager is a secret store with the capability to rotate secrets every X many days. It is mostly meant for RDS, but works for a variety of services.
+
+Artifact is a portal that gives AWS customers access to AWS compliance documentation and AWS agreements. It is to help support internal auditing and compliance.
+
 -----
 
 SQS lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. It is a fully-managed service used to decouple applications. It serves as a temporary message store so that a receivering service can receive data at a timeframe and manner that is acceptable to it, as opposed to just receiving a message whenever the sender sends it. It is the oldest AWS offering and one of the first services to appear in the cloud. It scales from 1 message to 10,000s per second. Requests are deleted after they are read.
