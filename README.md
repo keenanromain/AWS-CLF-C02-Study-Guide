@@ -19,7 +19,7 @@ AWS has three pricing fundamentals, following the pay-as-you-go pricing model
 
 IAM: Users & Groups
 
-IAM (Identity and Access Management) is a global service. The root account created by default during account creation shouldn't be used or shared. Instead, you should create users. A user represents one individual in your organiztion. Users can be grouped. Groups however cannot be grouped inside of other groups. Users don't have to belong to groups and users an belong to multiple groups.
+IAM (Identity and Access Management) is a global service. The root account created by default during account creation shouldn't be used or shared. Instead, you should create users. A user represents one individual in your organization. Users can be grouped. Groups however cannot be grouped inside of other groups. Users don't have to belong to groups. Also, a single user can belong to multiple groups.
 
 <img width="1161" alt="Screen Shot 2024-12-01 at 9 39 10 PM" src="https://github.com/user-attachments/assets/4495fe16-5afe-4453-af2f-6a209abe3ea4">
 
