@@ -72,9 +72,6 @@ EFS Infrequent Access (EFS-IA) is cost-optimized for files that aren't accessed 
 
 Amazon FSx is a fully managed share file system alterantive with offerings for Lustre, Microsoft's Windows File Server, and NetApp ONTAP
 
-
-<img width="657" alt="Screen Shot 2024-12-09 at 5 41 42 PM" src="https://github.com/user-attachments/assets/b9b64074-dab5-4305-b8ed-3b3d5740921e">
-
 Scalability means that an application or system has the capability to handle greater loads by adapting. There are two kinds of scalability; horizontal scaling and vertical scaling i.e. scaling out vs. scaling up. 
 
 Horizontal scaling means increasing the number of instances. For example, your application on AWS runs on a t2.micro EC2 instance but with more traffic it begins to get laggy. Scaling horizontally could mean spinning up three more t2.micro EC2 instances. Horizontal scalability is common for distributed systems like web applications. 
