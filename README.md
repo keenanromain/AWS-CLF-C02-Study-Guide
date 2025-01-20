@@ -456,3 +456,5 @@ SNS is a managed messaging service for communication, allowing messaging between
 MQ is a managed message broker service for RabbitMQ and ActiveMQ. This is helpful for traditional applications running on-premise that may be using protocols like MQTT, AMQP, STOMP, Openwite, etc. that need to be migrated into AWS. Instead of changing the system to conform to cloud native protocols like SNS or SQS, they can be lifted and shifted into AWS and run similarly to how they were run on-prem. MQ does not scale similarly to the cloud-native alternatives and runs on EC2 servers.
 
 --------
+
+You can use the AWS Health Dashboard – Service health to view the health of all AWS services. It is the single place to learn about the availability and operations of AWS services. This page shows reported service events and disruptions for services across AWS Regions. The AWS Health Dashboard – Service health offers the possibility to subscribe to an RSS feed to be notified of interruptions to each service.
