@@ -638,3 +638,30 @@ A subnet is a range of IP addresses within your Amazon Virtual Private Cloud (Am
 A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. Security groups act at the instance level, not at the subnet level. Security groups are stateful — if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of inbound security group rules. A security group evaluates all rules before deciding whether to allow traffic.
 
 A network access control list (network ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets (i.e. it works at subnet level). A network access control list (network ACL) contains a numbered list of rules. A network access control list (network ACL) evaluates the rules in order, starting with the lowest numbered rule, to determine whether traffic is allowed in or out of any subnet associated with the network ACL. 
+
+Shield Advanced offers some cost protection against spikes in your AWS bill that could result from a DDoS attack. This cost protection is provided for your Elastic Load Balancing load balancers, Amazon CloudFront distributions, Amazon Route 53 hosted zones, Amazon Elastic Compute Cloud instances, and your AWS Global Accelerator accelerators. AWS Shield Advanced is a paid service for all customers, irrespective of the Support plan.
+
+Most policies are stored in AWS as JSON documents. Identity-based policies and policies used to set permissions boundaries are JSON policy documents that you attach to a user or role. Resource-based policies are JSON policy documents that you attach to a resource.
+
+A JSON policy document includes these elements:
+
+  Optional policy-wide information at the top of the document
+  One or more individual statements
+
+Each statement includes information about a single permission. The information in a statement is contained within a series of elements.
+
+  1. Version – Specify the version of the policy language that you want to use. As a best practice, use the latest 2012-10-17 version.
+
+  2. Statement – Use this main policy element as a container for the following elements. You can include more than one statement in a policy.
+        a. Sid (Optional) – Include an optional statement ID to differentiate between your statements.
+        b. Effect – Use Allow or Deny to indicate whether the policy allows or denies access.
+        c. Principal (Required in only some circumstances) – If you create a resource-based policy, you must indicate the account, user, role, or federated user to which you would like to allow or deny access. If you are creating an IAM permissions policy to attach to a user or role, you cannot include this element. The principal is implied as that user or role.
+        d. Action – Include a list of actions that the policy allows or denies.
+        e. Resource (Required in only some circumstances) – If you create an IAM permissions policy, you must specify a list of resources to which the actions apply. If you create a resource-based policy, this element is optional. If you do not include this element, then the resource to which the action applies is the resource to which the policy is attached.
+        f. Condition (Optional) – Specify the circumstances under which the policy grants permission.
+
+For each resource, each tag key must be unique, and each tag key can have only one value. A Cost Allocation Tag is a label that you or AWS assigns to an AWS resource. Each tag consists of a key and a value. For each resource, each tag key must be unique, and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level.
+
+You must activate both AWS generated tags and user-defined tags separately before they can appear in Cost Explorer or on a cost allocation report. AWS provides two types of cost allocation tags, an AWS generated tags and user-defined tags. AWS defines, creates, and applies the AWS generated tags for you, and you define, create, and apply user-defined tags. You must activate both types of tags separately before they can appear in Cost Explorer or on a cost allocation report.
+
+AWS Cost & Usage Report (AWS CUR) contains the most comprehensive set of cost and usage data available. You can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself.
