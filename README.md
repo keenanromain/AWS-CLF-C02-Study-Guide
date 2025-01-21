@@ -700,3 +700,5 @@ EC2 Image Builder is an automated pipeline for the creation, maintenance, valida
 EBS Volumes are tied to only one availability zone.
 
 The AWS Glue Data Catalog is a central repository to store structural and operational metadata for all your data assets. For a given data set, you can store its table definition, physical location, add business relevant attributes, as well as track how this data has changed over time.
+
+Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Kinesis offers four services: Data Firehose, Data Analytics, Data Streams, Video Streams.
