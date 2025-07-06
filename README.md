@@ -1,4 +1,13 @@
 # AWS-CLF-C02-Study-Guide
+This study guide will help you pass the AWS Certified Cloud Practitioner exam. Ideally, you should reference this guide while working through the following material:
+
+ 1. Stephane Maarek's <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/?couponCode=JUL_25_GET_STARTED">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> (permanent discount available through this link)
+2. The FAQs for the most critical services, included in the recommended reading list below
+3. Stephane Maarek's <a href="https://www.udemy.com/course/practice-exams-aws-certified-cloud-practitioner/?couponCode=JUL_25_GET_STARTED">6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02</a> (permanent discount available through this link)
+4. Andrew Brown's <a href="https://www.youtube.com/watch?v=NhDYbskXRgc">AWS Certified Cloud Practitioner Certification Course (CLF-C02) - Pass the Exam!</a> 
+
+*Notes*:
+If at any point you find yourself feeling uncertain of your progress and in need of more time, you can postpone your AWS exam date. Be sure to also keep up with the ongoing discussions in <a href="https://reddit.com/r/AWSCertifications/">r/AWSCertifications</a> as you will find relevant exam tips, studying material, and advice from other exam takers. Before experimenting with AWS, it's very important to be sure that you know what is <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc">free</a> and what isn't. Relevant Free Tier FAQs can be found <a href="https://aws.amazon.com/free/free-tier-faqs/">here</a>. 
 
 AWS Global Infrastructure:
 https://aws.amazon.com/about-aws/global-infrastructure/ 
