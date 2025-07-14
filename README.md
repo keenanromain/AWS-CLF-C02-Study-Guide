@@ -489,19 +489,15 @@ management, governance and entitlement)
 • Identifying technical assistance options available at AWS (for example, AWS
 Professional Services, AWS Solutions Architects)
 
-AWS Global Infrastructure:
-https://aws.amazon.com/about-aws/global-infrastructure/ 
+## Identity Access Management (IAM)
 
-AWS Services by Region:
-https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/ 
+IAM Simplified:
 
+IAM Entities:
 
-AWS has three pricing fundamentals, following the pay-as-you-go pricing model
-1. Pay for compute time
-2. Pay for data stored in AWS
-3. Pay for data transfered out of AWS (data transfered in is free)
+IAM Key Details:
 
-<img width="1072" alt="Screen Shot 2024-11-28 at 12 00 39 PM" src="https://github.com/user-attachments/assets/4f610cbc-a34a-4476-942c-d36123b1f28a">
+IAM Security Tools:
 
 IAM: Users & Groups
 
@@ -1204,3 +1200,19 @@ You pay for all bandwidth into and out of Amazon S3, except for the following: (
  S3 Replication
 
 Replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts. You can copy objects between different AWS Regions or within the same Region. You can use replication to make copies of your objects that retain all metadata, such as the original object creation time and version IDs. This capability is important if you need to ensure that your replica is identical to the source object.
+
+# Misc
+
+AWS Global Infrastructure:
+https://aws.amazon.com/about-aws/global-infrastructure/ 
+
+AWS Services by Region:
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/ 
+
+
+AWS has three pricing fundamentals, following the pay-as-you-go pricing model
+1. Pay for compute time
+2. Pay for data stored in AWS
+3. Pay for data transfered out of AWS (data transfered in is free)
+
+<img width="1072" alt="Screen Shot 2024-11-28 at 12 00 39 PM" src="https://github.com/user-attachments/assets/4f610cbc-a34a-4476-942c-d36123b1f28a">
