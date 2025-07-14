@@ -21,12 +21,18 @@ If at any point you find yourself feeling uncertain of your progress and in need
 *Domain 1: Cloud Concepts*
 
 Task Statement 1.1: Define the benefits of the AWS Cloud.
+
 Knowledge of:
+
 • Value proposition of the AWS Cloud
+
 Skills in:
+
 • Understanding the economies of scale (for example, cost savings)
+
 • Understanding the benefits of global infrastructure (for example, speed of
 deployment, global reach)
+
 • Understanding the advantages of high availability, elasticity, and agility
 
 Task Statement 1.2: Identify design principles of the AWS Cloud.
