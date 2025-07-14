@@ -20,7 +20,7 @@ If at any point you find yourself feeling uncertain of your progress and in need
 ### Exam Content Breakdown:
 *Domain 1: Cloud Concepts*
 
-Task Statement 1.1: Define the benefits of the AWS Cloud.
+<u>Task Statement 1.1: Define the benefits of the AWS Cloud.</u>
 
 Knowledge of:
 
