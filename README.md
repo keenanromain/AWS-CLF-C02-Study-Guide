@@ -13,6 +13,10 @@ If at any point you find yourself feeling uncertain of your progress and in need
 
 ## Table of Contents
 
+## Introduction
+
+<a href="https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf">**The Official AWS Certified Cloud Practitioner (CLF-C02) Exam Guide**</a>
+
 AWS Global Infrastructure:
 https://aws.amazon.com/about-aws/global-infrastructure/ 
 
