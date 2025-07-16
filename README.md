@@ -513,6 +513,41 @@ Users can access AWS via the AWS Management Console (password protected and opti
 
 IAM Roles allow us to assign permissions to AWS services. For example, we may have a virtual server in EC2 retrieve data from an RDS database. The EC2 instance would need permissions via an IAM Role in order to query the database.
 
+## Simple Storage Service (S3)
+
+S3 Simplified:
+
+S3 Key Details:
+
+S3 Storage Classes:
+
+S3 Encryption:
+
+S3 Versioning:
+
+S3 Lifecycle Management:
+
+S3 Select:
+
+## CloudFront
+
+CloudFront Simplified:
+
+CloudFront Key Details:
+
+
+## Elastic Compute Cloud (EC2)
+
+EC2 Simplified:
+
+EC2 Key Details:
+
+EC2 Instance Types:
+
+EC2 Instance Pricing:
+
+EC2 Security:
+
 EC2 allows us to rent virtual machines. We can store data on virtual drives (Elastic Block Store) that attach to EC2. You can choose your instance to be Linux, Mac Os, or Windows.
 
 EC2 Instance Types:
