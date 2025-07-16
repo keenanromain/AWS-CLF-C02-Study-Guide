@@ -16,7 +16,7 @@ If at any point you find yourself feeling uncertain of your progress and in need
 2. <a href="#exam-content-breakdown">Exam Content Breakdown</a>
 3. <a href="#simple-storage-service-s3">Simple Storage Service (S3)</a>
 4. <a href="#cloudfront">CloudFront</a>
-5. <a href="#elastic-compute-coud-ec2">Elastic Compute Cloud (EC2)</a>
+5. <a href="#elastic-compute-cloud-ec2">Elastic Compute Cloud (EC2)</a>
 
 
 
