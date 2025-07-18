@@ -520,19 +520,11 @@ IAM Roles allow us to assign permissions to AWS services. For example, we may ha
 
 ## Simple Storage Service (S3)
 
-# S3 Simplified:
+### S3 Simplified:
 
 Amazon S3 is infinity scaling storage. It is used for archives, backups, disaster recovery, media and application hosting, data lakes, hosting static websites, etc. S3 stores files in 'buckets'. Once a file is in a bucket, it is referred to as an 'object'. 
 
-
-
-
-For AWS services to get access to S3, they will need an IAM Role
-
-<img width="672" alt="Screen Shot 2024-12-13 at 3 01 44 PM" src="https://github.com/user-attachments/assets/adf8a483-d549-43d2-8247-e598b852f1c2" />
-
-
-# S3 Key Details:
+### S3 Key Details:
 
 - S3 buckets must have a globally unique name across all regions and all AWS accounts. The name cannot have uppercases or underscores and it must be between 3 to 63 characters long.
 
@@ -543,7 +535,11 @@ For AWS services to get access to S3, they will need an IAM Role
 
 - The 'value' for the object's key-value pair is the content of the file itself. The max object size is 5TB. All objects have corresponding metadata (including a Version ID in case you reupload the same file multiple times) and you can use tags to organize the objects that live inside your bucket.
 
-# S3 Storage Classes:
+- For AWS services to get access to S3, they will need an IAM Role
+
+<img width="672" alt="Screen Shot 2024-12-13 at 3 01 44 PM" src="https://github.com/user-attachments/assets/adf8a483-d549-43d2-8247-e598b852f1c2" />
+
+### S3 Storage Classes:
 
 The main storage classes are below:
 ![image](https://github.com/user-attachments/assets/8531aed8-5292-4840-88fd-68b625d2a435)
@@ -562,7 +558,7 @@ The main storage classes are below:
 2. **S3 Glacier Flexible Retrieval**: For archive data that does not require immediate access but needs the flexibility to retrieve large sets of data at no cost, such as backup or disaster recovery use cases. It can perform the retrieval in minutes or you can select the free bulk retrievals in 5—12 hours.
 3. **3 Glacier Deep Archive**: To save even more on long-lived archive storage such as compliance archives and digital media preservation. It is the lowest cost storage in the cloud with data retrieval from 12—48 hours.
 
-# S3 Security
+### S3 Security
 
 S3 Security is both user-based and resource-based. 
 
@@ -580,7 +576,7 @@ Bucket Policies are JSON based. Example below:
 
 <img width="789" alt="Screen Shot 2024-12-13 at 2 58 18 PM" src="https://github.com/user-attachments/assets/02db967e-ca5c-4d51-8d9f-faf13472ac57" />
 
-# S3 Encryption:
+### S3 Encryption:
 
 By default, S3 does server-side encryption. This means S3 does the encryption once it receives the uploaded object. However, you can also perform client-side encryption where you encrypt the file prior to uploading into S3. 
 
@@ -588,11 +584,11 @@ IAM Access Analyzer for S3 ensures only the intended people have access to your 
 
 <img width="1202" alt="Screen Shot 2024-12-14 at 12 22 49 PM" src="https://github.com/user-attachments/assets/29af14b9-66aa-4fb6-b621-35b0417c2462" />
 
-# S3 Versioning:
+### S3 Versioning:
 
 You can version your files in S3 which is helpful for backups. Versioning is enabled at the bucket level. It is best practice to version your buckets to protect against unintended deletes and its easy to roll back to a previous version. 
 
-# S3 Lifecycle Management:
+### S3 Lifecycle Management:
 
 You can also have your S3 bucket replicate it's contents to another bucket such as replicating from one bucket in the US (us-east-1) to Europe (eu-west-2). Uses cases include lowering latency for users to access content, adhering to local compliance laws, disaster recovery, etc. To replicate your bucket's content, you must have versioning enabled.
 
