@@ -522,6 +522,66 @@ IAM Roles allow us to assign permissions to AWS services. For example, we may ha
 
 S3 Simplified:
 
+Amazon S3 is infinity scaling storage. It is used for archives, backups, disaster recovery, media and application hosting, data lakes, hosting static websites, etc.
+
+S3 stores files in 'buckets'. Once a file is in a bucket, it is referred to as an 'object'. 
+
+S3 buckets must have a globally unique name across all regions and all AWS accounts. The name cannot have uppercases or underscores and it must be between 3 to 63 characters long.
+
+Even though the S3 bucket name must exist globally, the bucket itself is defined to a region.
+
+S3 objects have a key and the key is the full path to the object inside of the bucket.
+![image](https://github.com/user-attachments/assets/549cefae-c2b4-404b-9618-489b003bffa2)
+
+The 'value' for the object's key-value pair is the content of the file itself. The max object size is 5TB. All objects have corresponding metadata (including a Version ID in case you reupload the same file multiple times) and you can use tags to organize the objects that live inside your bucket.
+
+S3 Security is both user-based and resource-based. 
+
+User-based security includes IAM policies that can determine what kind of API calls and access a given user can have for your bucket. 
+
+<img width="679" alt="Screen Shot 2024-12-13 at 3 00 43 PM" src="https://github.com/user-attachments/assets/27317741-ad42-4bb3-ba01-b1bec3823edf" />
+
+
+Resource-based security includes Bucket Policies are rules applied at a universal bucket-wide level and Object Access Control Lists (ACL) for more precise rules.
+
+<img width="646" alt="Screen Shot 2024-12-13 at 3 00 12 PM" src="https://github.com/user-attachments/assets/081f5e04-5dc3-4bf8-aba7-d77615a48344" />
+
+
+Bucket Policies are JSON based. Example below:
+
+<img width="789" alt="Screen Shot 2024-12-13 at 2 58 18 PM" src="https://github.com/user-attachments/assets/02db967e-ca5c-4d51-8d9f-faf13472ac57" />
+
+For AWS services to get access to S3, they will need an IAM Role
+
+<img width="672" alt="Screen Shot 2024-12-13 at 3 01 44 PM" src="https://github.com/user-attachments/assets/adf8a483-d549-43d2-8247-e598b852f1c2" />
+
+You can version your files in S3 which is helpful for backups. Versioning is enabled at the bucket level. It is best practice to version your buckets to protect against unintended deletes and its easy to roll back to a previous version. 
+
+You can also have your S3 bucket replicate it's contents to another bucket such as replicating from one bucket in the US (us-east-1) to Europe (eu-west-2). Uses cases include lowering latency for users to access content, adhering to local compliance laws, disaster recovery, etc. To replicate your bucket's content, you must have versioning enabled.
+
+The main storage classes are below:
+![image](https://github.com/user-attachments/assets/8531aed8-5292-4840-88fd-68b625d2a435)
+
+**S3 Standard** offers high durability, availability, and performance object storage for frequently accessed data. Because it delivers low latency and high throughput, S3 Standard is appropriate for a wide variety of use cases, including cloud applications, dynamic websites, content distribution, mobile and gaming applications, and big data analytics. 
+
+**S3 Standard-Infrequent Access (S3 Standard-IA)** is for data that is accessed less frequently, but requires rapid access when needed. S3 Standard-IA offers the high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval charge. This combination of low cost and high performance make S3 Standard-IA ideal for long-term storage, backups, and as a data store for disaster recovery files. 
+
+**S3 One Zone-Infrequent Access (S3 One Zone-IA)** is for data that is accessed less frequently, but requires rapid access when needed. Unlike other S3 Storage Classes which store data in a minimum of three Availability Zones (AZs), S3 One Zone-IA stores data in a single AZ and costs 20% less than S3 Standard-IA. S3 One Zone-IA is ideal for customers who want a lower-cost option for infrequently accessed data but do not require the availability and resilience of S3 Standard or S3 Standard-IA. It’s a good choice for storing secondary backup copies of on-premises data or easily re-creatable data.
+
+**S3 Intelligent-Tiering** is the first cloud storage that automatically reduces your storage costs on a granular object level by automatically moving data to the most cost-effective access tier based on access frequency, without performance impact, retrieval fees, or operational overhead. You can use S3 Intelligent-Tiering as the default storage class for virtually any workload, especially data lakes, data analytics, new applications, and user-generated content.
+
+**S3 Glacier** is purpose-built for data archiving, and are designed to provide you with the highest performance, the most retrieval flexibility, and the lowest cost archive storage in the cloud. You can choose from three archive storage classes optimized for different access patterns and storage duration:
+
+1. **S3 Glacier Instant Retrieval**: For archive data that needs immediate access, such as medical images, news media assets, or genomics data, etc. It is an archive storage class that delivers low cost storage with milliseconds retrieval.
+2. **S3 Glacier Flexible Retrieval**: For archive data that does not require immediate access but needs the flexibility to retrieve large sets of data at no cost, such as backup or disaster recovery use cases. It can perform the retrieval in minutes or you can select the free bulk retrievals in 5—12 hours.
+3. **3 Glacier Deep Archive**: To save even more on long-lived archive storage such as compliance archives and digital media preservation. It is the lowest cost storage in the cloud with data retrieval from 12—48 hours.
+
+By default, S3 does server-side encryption. This means S3 does the encryption once it receives the uploaded object. However, you can also perform client-side encryption where you encrypt the file prior to uploading into S3. 
+
+IAM Access Analyzer for S3 ensures only the intended people have access to your S3 bucket. It evaluates S3 bucket policies, S3 Access Control Lists (ACLs) and IAM policies.
+
+<img width="1202" alt="Screen Shot 2024-12-14 at 12 22 49 PM" src="https://github.com/user-attachments/assets/29af14b9-66aa-4fb6-b621-35b0417c2462" />
+
 S3 Key Details:
 
 S3 Storage Classes:
@@ -641,65 +701,7 @@ Some of the most common Auto Scaling Group strategies include Dynamic Scaling, P
 
 3. With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
 
-Amazon S3 is infinity scaling storage. It is used for archives, backups, disaster recovery, media and application hosting, data lakes, hosting static websites, etc.
 
-S3 stores files in 'buckets'. Once a file is in a bucket, it is referred to as an 'object'. 
-
-S3 buckets must have a globally unique name across all regions and all AWS accounts. The name cannot have uppercases or underscores and it must be between 3 to 63 characters long.
-
-Even though the S3 bucket name must exist globally, the bucket itself is defined to a region.
-
-S3 objects have a key and the key is the full path to the object inside of the bucket.
-![image](https://github.com/user-attachments/assets/549cefae-c2b4-404b-9618-489b003bffa2)
-
-The 'value' for the object's key-value pair is the content of the file itself. The max object size is 5TB. All objects have corresponding metadata (including a Version ID in case you reupload the same file multiple times) and you can use tags to organize the objects that live inside your bucket.
-
-S3 Security is both user-based and resource-based. 
-
-User-based security includes IAM policies that can determine what kind of API calls and access a given user can have for your bucket. 
-
-<img width="679" alt="Screen Shot 2024-12-13 at 3 00 43 PM" src="https://github.com/user-attachments/assets/27317741-ad42-4bb3-ba01-b1bec3823edf" />
-
-
-Resource-based security includes Bucket Policies are rules applied at a universal bucket-wide level and Object Access Control Lists (ACL) for more precise rules.
-
-<img width="646" alt="Screen Shot 2024-12-13 at 3 00 12 PM" src="https://github.com/user-attachments/assets/081f5e04-5dc3-4bf8-aba7-d77615a48344" />
-
-
-Bucket Policies are JSON based. Example below:
-
-<img width="789" alt="Screen Shot 2024-12-13 at 2 58 18 PM" src="https://github.com/user-attachments/assets/02db967e-ca5c-4d51-8d9f-faf13472ac57" />
-
-For AWS services to get access to S3, they will need an IAM Role
-
-<img width="672" alt="Screen Shot 2024-12-13 at 3 01 44 PM" src="https://github.com/user-attachments/assets/adf8a483-d549-43d2-8247-e598b852f1c2" />
-
-You can version your files in S3 which is helpful for backups. Versioning is enabled at the bucket level. It is best practice to version your buckets to protect against unintended deletes and its easy to roll back to a previous version. 
-
-You can also have your S3 bucket replicate it's contents to another bucket such as replicating from one bucket in the US (us-east-1) to Europe (eu-west-2). Uses cases include lowering latency for users to access content, adhering to local compliance laws, disaster recovery, etc. To replicate your bucket's content, you must have versioning enabled.
-
-The main storage classes are below:
-![image](https://github.com/user-attachments/assets/8531aed8-5292-4840-88fd-68b625d2a435)
-
-**S3 Standard** offers high durability, availability, and performance object storage for frequently accessed data. Because it delivers low latency and high throughput, S3 Standard is appropriate for a wide variety of use cases, including cloud applications, dynamic websites, content distribution, mobile and gaming applications, and big data analytics. 
-
-**S3 Standard-Infrequent Access (S3 Standard-IA)** is for data that is accessed less frequently, but requires rapid access when needed. S3 Standard-IA offers the high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval charge. This combination of low cost and high performance make S3 Standard-IA ideal for long-term storage, backups, and as a data store for disaster recovery files. 
-
-**S3 One Zone-Infrequent Access (S3 One Zone-IA)** is for data that is accessed less frequently, but requires rapid access when needed. Unlike other S3 Storage Classes which store data in a minimum of three Availability Zones (AZs), S3 One Zone-IA stores data in a single AZ and costs 20% less than S3 Standard-IA. S3 One Zone-IA is ideal for customers who want a lower-cost option for infrequently accessed data but do not require the availability and resilience of S3 Standard or S3 Standard-IA. It’s a good choice for storing secondary backup copies of on-premises data or easily re-creatable data.
-
-**S3 Intelligent-Tiering** is the first cloud storage that automatically reduces your storage costs on a granular object level by automatically moving data to the most cost-effective access tier based on access frequency, without performance impact, retrieval fees, or operational overhead. You can use S3 Intelligent-Tiering as the default storage class for virtually any workload, especially data lakes, data analytics, new applications, and user-generated content.
-
-**S3 Glacier** is purpose-built for data archiving, and are designed to provide you with the highest performance, the most retrieval flexibility, and the lowest cost archive storage in the cloud. You can choose from three archive storage classes optimized for different access patterns and storage duration:
-
-1. **S3 Glacier Instant Retrieval**: For archive data that needs immediate access, such as medical images, news media assets, or genomics data, etc. It is an archive storage class that delivers low cost storage with milliseconds retrieval.
-2. **S3 Glacier Flexible Retrieval**: For archive data that does not require immediate access but needs the flexibility to retrieve large sets of data at no cost, such as backup or disaster recovery use cases. It can perform the retrieval in minutes or you can select the free bulk retrievals in 5—12 hours.
-3. **3 Glacier Deep Archive**: To save even more on long-lived archive storage such as compliance archives and digital media preservation. It is the lowest cost storage in the cloud with data retrieval from 12—48 hours.
-
-By default, S3 does server-side encryption. This means S3 does the encryption once it receives the uploaded object. However, you can also perform client-side encryption where you encrypt the file prior to uploading into S3. 
-
-IAM Access Analyzer for S3 ensures only the intended people have access to your S3 bucket. It evaluates S3 bucket policies, S3 Access Control Lists (ACLs) and IAM policies.
-
-<img width="1202" alt="Screen Shot 2024-12-14 at 12 22 49 PM" src="https://github.com/user-attachments/assets/29af14b9-66aa-4fb6-b621-35b0417c2462" />
 
 The AWS Snow Family (comprised of AWS Snowcone, Snowball, and AWS Snowmobile) are a collection of physical devices that are used to physically transport up to exabytes of data in to and out of AWS. Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities. If you need to upload data into AWS but cannot do so over the internet due to a lack consistent network connectivity, security concerns, etc. you can have a Snow device come to you and after you load your data into the device, you ship it back to an AWS data center.
 
